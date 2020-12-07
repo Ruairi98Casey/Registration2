@@ -18,7 +18,7 @@
         <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
 
         <style>
-
+            
             .registercontainer{
                 width: 100%;
                 height: auto;
@@ -71,11 +71,10 @@
         </ul>
 
 
-        <!-- For now I am only showing how to insert value into the database from jsp servlet. Designing & REsponsive will be shown later 
-        
-        Now UI pasrt is ready I am going to create a table for it
-        -->
+        <!-- Inserting value into the database from register.jsp servlet.
 
+        <!-- Creating a table for user registration -->
+      
         <div class="registercontainer">
 
             <form action="register" method="post">

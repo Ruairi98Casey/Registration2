@@ -61,10 +61,6 @@
             <li class="right"><a class="active" href="login.jsp">Login</a></li>
         </ul>
 
-        <!-- For Login we need username and password so i just take it from register 
-            To do this I need to change the login part from action to login
-        -->
-
         <form action="login" method="post">
 
             <label>User Name</label><br/> 
@@ -72,7 +68,7 @@
 
             <label>Password</label><br/> 
             <input id="password" type="password" placeholder="Enter Password" name="psw"></br><br/>
-            <!--Now I am going to show the error message here-->
+            <!--error message if login details are incorrect-->
             <span style="color: red;">${error}</span><br>
             <input type="submit" id="submit" value="LOGIN"></br> 
 

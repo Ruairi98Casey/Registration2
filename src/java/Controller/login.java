@@ -20,15 +20,7 @@ import javax.servlet.http.HttpSession;
  */
 public class login extends HttpServlet {
 
-    /**
-     * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
-     * methods.
-     *
-     * @param request servlet request
-     * @param response servlet response
-     * @throws ServletException if a servlet-specific error occurs
-     * @throws IOException if an I/O error occurs
-     */
+
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
@@ -37,29 +29,12 @@ public class login extends HttpServlet {
         }
     }
 
-    // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
-    /**
-     * Handles the HTTP <code>GET</code> method.
-     *
-     * @param request servlet request
-     * @param response servlet response
-     * @throws ServletException if a servlet-specific error occurs
-     * @throws IOException if an I/O error occurs
-     */
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         processRequest(request, response);
     }
 
-    /**
-     * Handles the HTTP <code>POST</code> method.
-     *
-     * @param request servlet request
-     * @param response servlet response
-     * @throws ServletException if a servlet-specific error occurs
-     * @throws IOException if an I/O error occurs
-     */
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
@@ -88,8 +63,7 @@ public class login extends HttpServlet {
                 ps.setString(1, username);
                 ps.setString(2, password);
                 
-                //after this we need DB username and Db password to match from user input & database
-                
+                //Matching DB username and Db password to user input 
                 String unameDB = "";
                 String passDb = "";
                 
@@ -118,16 +92,10 @@ public class login extends HttpServlet {
                     System.out.println("Inside ELSEE");
                     request.setAttribute("error", "INVALID CREDENTIALS");
                     RequestDispatcher rd = request.getRequestDispatcher("login.jsp");
-                    rd.include(request, response);
-                    
-                }
-                
-                //Login done and working as expected
-                //Now I will change the navigation bar
-                
-                
-                
-                
+                    rd.include(request, response);                    
+                }                
+                //Login done 
+                          
             }catch(Exception e){
                 System.out.println("Error From LOGIN PART ::"+e.getMessage());
             }

@@ -17,7 +17,9 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+        <!-- Applying CSS to navigation bar -->
         <style>
+            
             body {margin: 0;}
 
             ul.topnav {
@@ -53,18 +55,18 @@
  
     </head>
     <body>
-        <!-- Applying CSS and some style to look better -->
-        <!-- Must retrieve session from login.java --> 
+        
+        <!-- Retrieving session from login.java --> 
         <%
             String Name = (String) session.getAttribute("username");
             System.out.println("USRENAEM INDEX JSP" + Name);
 
             if (Name == null) {
-                //if name null then no one is logged in so we are going to show simple one this
+                //if name null then no one is logged in so it show this
 
         %>
-
-
+        
+        
         <ul class="topnav">
             <li><a class="active" href="#home">Home</a></li>
             <li><a href="#">Services</a></li>
@@ -73,12 +75,15 @@
             <li class="right"><a href="register.jsp">Register</a></li>
             <li class="right"><a href="login.jsp">Login</a></li>
         </ul>
+        
+        </br><center><h1>Welcome to A Helping Hand</h1></center>
 
         <%} else if (Name != null) {
             //if name not null then someone is logged in, then we are going to change the navigation bar 
         %>
   
-
+        <!-- Navigation bar when someone is logged in -->
+        
         <ul class="topnav">
             <li><a class="active" href="#home">Home</a></li>
             <li><a href="#">Services</a></li>
@@ -87,7 +92,7 @@
             <li class="right"><a href="logout.jsp">Log Out</a></li>
         </ul>
 
-
+        <!-- Retrieving session from login.java and displaying username from DB on form if logged --> 
         <h5 style="color: black; font-size: 20px;">Welcome, <%out.println(Name);%></h5>
 
         <%}%>

@@ -17,6 +17,8 @@
               type = "image/x-icon"> 
     </head>
     <body>
+        <!-- If user logs out, they are redirected to index.jsp -->
+        
         <%session.invalidate();%>
 
         <jsp:forward page="index.jsp" />

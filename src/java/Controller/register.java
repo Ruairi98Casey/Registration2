@@ -23,16 +23,13 @@ public class register extends HttpServlet {
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
         try (PrintWriter out = response.getWriter()) {
-
         }
     }
 
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
-            throws ServletException, IOException {
-
-        
+            throws ServletException, IOException {    
  
     }
 
@@ -45,7 +42,7 @@ public class register extends HttpServlet {
         
                 PrintWriter out = response.getWriter();
         
-        //now here we need to add JDBC connection and take values from jsp and insert in into our database
+        //Adding JDBC connection and taking values from jsp and inserting them into our database
         
         String fullname = request.getParameter("fname");
         String username = request.getParameter("uname");
@@ -53,7 +50,7 @@ public class register extends HttpServlet {
         String password = request.getParameter("psw");
         String confirmpass = request.getParameter("cnfpsw");
         
-        // here we are taking user enter values from jsp and with the help of this servlet we are able to inster it into the database
+        // Taking user enter values from jsp and with the help of this servlet we are able to inster it into the database
         
         try{
             
@@ -65,7 +62,7 @@ public class register extends HttpServlet {
                     
             System.out.println("Connected");
             
-            //now we are connected with the DB
+            //connected with the DB
             
             String sql = "insert into register.register(fullname,username,email,password,confirmpass) values(?,?,?,?,?)";
             
