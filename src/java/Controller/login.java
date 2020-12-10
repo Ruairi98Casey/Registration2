@@ -52,11 +52,11 @@ public class login extends HttpServlet {
                 
                 Class.forName("com.mysql.jdbc.Driver");
                 
-                con = DriverManager.getConnection("jdbc:mysql://localhost:3306/mydb?useSSL=false","root","bis2020");
+                con = DriverManager.getConnection("jdbc:mysql://localhost:3306/users?useSSL=false","root","bis2020");
                 
                 System.out.println("Connected Login Part"); //connection complete
                 
-                String sql = "select * from register.register where username=? and password=?";
+                String sql = "select * from users.general where username=? and password=?";
                 
                 PreparedStatement ps = con.prepareStatement(sql);//this will run the query
                 

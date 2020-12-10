@@ -48,7 +48,7 @@ public class register extends HttpServlet {
         String username = request.getParameter("uname");
         String email = request.getParameter("email");
         String password = request.getParameter("psw");
-        String confirmpass = request.getParameter("cnfpsw");
+        String usertype = request.getParameter("usertype");
         
         // Taking user enter values from jsp and with the help of this servlet we are able to inster it into the database
         
@@ -58,13 +58,13 @@ public class register extends HttpServlet {
             
             Class.forName("com.mysql.jdbc.Driver");
             
-            con = DriverManager.getConnection("jdbc:mysql://localhost:3306/mydb?useSSL=false","root","bis2020");
+            con = DriverManager.getConnection("jdbc:mysql://localhost:3306/users?useSSL=false","root","bis2020");
                     
             System.out.println("Connected");
             
             //connected with the DB
             
-            String sql = "insert into register.register(fullname,username,email,password,confirmpass) values(?,?,?,?,?)";
+            String sql = "insert into users.general(fullname,username,email,password,usertype) values(?,?,?,?,?)";
             
             PreparedStatement ps = con.prepareStatement(sql);
             
@@ -72,7 +72,7 @@ public class register extends HttpServlet {
             ps.setString(2, username);
             ps.setString(3, email);
             ps.setString(4, password);
-            ps.setString(5, confirmpass);
+            ps.setString(5, usertype);
             
             
             ps.executeUpdate();

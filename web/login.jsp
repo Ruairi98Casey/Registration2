@@ -10,7 +10,8 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>A Helping Hand</title>
-
+        <link href="bootstrapNEW/css/bootstrap.css" rel="stylesheet" type="text/css"/>
+        <link href="bootstrapNEW/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
         <!-- add icon link -->
         <link rel = "icon" href =  
               "https://image.freepik.com/free-vector/handshake-icon-flat-style_169241-482.jpg" 

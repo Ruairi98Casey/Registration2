@@ -10,7 +10,8 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>A Helping Hand</title>
-
+        <link href="bootstrapNEW/css/bootstrap.css" rel="stylesheet" type="text/css"/>
+        <link href="bootstrapNEW/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
         <!-- add icon link -->
         <link rel = "icon" href =  
               "https://image.freepik.com/free-vector/handshake-icon-flat-style_169241-482.jpg" 
@@ -18,7 +19,7 @@
         <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
 
         <style>
-            
+
             .registercontainer{
                 width: 100%;
                 height: auto;
@@ -74,28 +75,31 @@
         <!-- Inserting value into the database from register.jsp servlet.
 
         <!-- Creating a table for user registration -->
-      
+
         <div class="registercontainer">
 
             <form action="register" method="post">
-
+                <br>
                 <label>Full Name</label><br/> 
-                <input type="text" placeholder="Enter Full Name" name="fname" required></br>
+                <input type="text" placeholder="Enter Full Name" name="fname" required></br><br>
 
                 <label>User Name</label><br/> 
-                <input type="text" placeholder="Enter Username" name="uname" required></br>
+                <input type="text" placeholder="Enter Username" name="uname" required></br><br>
 
                 <label>Email</label><br/> 
-                <input type="email" placeholder="Enter Mail" name="email" required></br>
+                <input type="email" placeholder="Enter Mail" name="email" required></br><br>
 
                 <label>Password</label><br/> 
-                <input id="password" type="password" placeholder="Enter Password" name="psw" required></br>
+                <input id="password" type="password" placeholder="Enter Password" name="psw" required></br><br>
 
                 <span style="display: none;">Enter Minimum 8 Characters</span>
 
-                <label>Confirm Password</label><br/> 
+                <label>User Type</label><br/>
 
-                <input id="repassword" type="password" placeholder="Confirm your password" name="cnfpsw" required></br></br>
+                <select id="usertype" style="width:177px;" name="usertype" id="usertype" required></br>
+                    <option value="Buddy">Buddy</option>
+                    <option value="Friend in Need">Friend in Need</option>
+                </select></br><br>
 
 
                 <input type="submit" id="submit"  value="REGISTER"></br>                
