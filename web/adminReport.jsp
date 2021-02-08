@@ -104,7 +104,7 @@
     <center><h5>Administration Records</h5></center>
 
     </br>
-
+    <!-- Designing form -->
     <div class="row">
         <div class="col-sm-4">   
             <form method="POST" action="#">
@@ -150,7 +150,7 @@
             </form>
 
         </div>
-
+        <!-- Designing table which will display DB information on users -->
         <div class="col-sm-8">   
 
             <div class="panel-body">
@@ -166,6 +166,7 @@
                             <th>Delete</th>
                         </tr>
 
+                        <!-- Establishing DB Connection using JSP -->
                         <%                                Connection con;
                             PreparedStatement pst;
                             ResultSet rs;
@@ -181,6 +182,7 @@
                                 String id = rs.getString("id");
                         %>
 
+                        <!-- Retrieving Data for table -->
                         <tr>
                             <td><%=rs.getString("fullname")%></td>
                             <td><%=rs.getString("username")%></td>
