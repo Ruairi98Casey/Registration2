@@ -13,6 +13,7 @@ A list of technologies used within the project:
 * System: Windows 10 version 10.0 running on amd64; Cp1252; en_IE (nb)
 * MySQL Workbench 8.0
 * GlassFish Server 4.1
+* Bootstrap v5.0.0-beta1 (Iteration 2)
 ***
 ### Aditional Sources 
 ***
@@ -22,3 +23,4 @@ A list of additional sources used within the project:
 * [Youtube](https://www.youtube.com/watch?v=lBB_hZj_vXM): Registration Form Using JSP Servlet & MySql NetBeans.
 * [Youtube](https://www.youtube.com/watch?v=7u9XtWIXzOA): Login/Logout using JSP servlet, java, MySql & changing navigation bar after Login and Logout.
 * [W3Schools](https://www.w3schools.com/css/tryit.asp?filename=trycss_navbar_horizontal_responsive): Naviagtion bar
+* [Youtube](https://www.youtube.com/watch?v=-etRgxd9vc4): Displaying DB records using JSP and CRUD functionality. (Iteration 2)
