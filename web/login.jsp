@@ -4,6 +4,9 @@
     Author     : ruair
 --%>
 
+<!-- Reference to the source I used to complete the 'Login' functionality in this form - https://www.youtube.com/watch?v=7u9XtWIXzOA (YouTube) -->
+<!-- Reference to the source I used to complete the 'Navigation Bar' in this form - https://www.w3schools.com/css/tryit.asp?filename=trycss_navbar_horizontal_responsive (w3schools) -->
+
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -18,6 +21,14 @@
               type = "image/x-icon"> 
 
         <style>
+
+            .registercontainer{
+                width: 100%;
+                height: auto;
+                text-align: center;
+            }
+
+
             body {margin: 0;}
 
             ul.topnav {
@@ -59,21 +70,30 @@
             <li><a href="#">Services</a></li>
             <li><a href="#">Contact</a></li>
             <li><a href="#">About</a></li>
+            <li><a href="covid.html">Covid-19</a></li>
             <li class="right"><a class="active" href="login.jsp">Login</a></li>
         </ul>
+        
+        <br>
+        
+        <div class="registercontainer">
 
-        <form action="login" method="post">
+            <form action="login" method="post">
 
-            <label>User Name</label><br/> 
-            <input type="text" placeholder="Enter Username" name="uname" required></br>
+                <label>User Name</label><br/> 
+                <input type="text" placeholder="Enter Username" name="uname" required></br>
 
-            <label>Password</label><br/> 
-            <input id="password" type="password" placeholder="Enter Password" name="psw"></br><br/>
-            <!--error message if login details are incorrect-->
-            <span style="color: red;">${error}</span><br>
-            <input type="submit" id="submit" value="LOGIN"></br> 
+                <br>
+                
+                <label>Password</label><br/> 
+                <input id="password" type="password" placeholder="Enter Password" name="psw"></br><br/>
+                <!--error message if login details are incorrect-->
+                <span style="color: red;">${error}</span><br>
+                <input type="submit" id="submit" value="LOGIN"></br> 
 
-        </form>
+            </form>
+
+        </div>
 
     </body>
 </html>

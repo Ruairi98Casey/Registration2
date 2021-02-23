@@ -4,6 +4,9 @@
     Author     : ruair
 --%>
 
+<!-- Reference to the source I used to complete the 'Navigation Bar' in this form - https://www.w3schools.com/css/tryit.asp?filename=trycss_navbar_horizontal_responsive (w3schools) -->
+<!-- Reference to the source I used to complete the 'Admin' Functionality in this form - https://www.youtube.com/watch?v=-etRgxd9vc4 (YouTube) -->
+
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@page import="java.sql.*" %>
 
@@ -103,6 +106,7 @@
             <li><a href="#">Services</a></li>
             <li><a href="#">Contact</a></li>
             <li><a href="#">About</a></li>
+            <li><a href="covid.html">Covid-19</a></li>
             <li class="right"><a href="register.jsp">Register</a></li>
             <li class="right"><a href="login.jsp">Login</a></li>
             <li class="right"><a class="active" href="adminReport.jsp">Admin Records</a></li>

@@ -4,6 +4,9 @@
     Author     : ruair
 --%>
 
+<!-- Reference to the source I used to complete the 'Register' functionality in this form - https://www.youtube.com/watch?v=lBB_hZj_vXM (YouTube) -->
+<!-- Reference to the source I used to complete the 'Navigation Bar' in this form - https://www.w3schools.com/css/tryit.asp?filename=trycss_navbar_horizontal_responsive (w3schools) -->
+
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -68,11 +71,12 @@
             <li><a href="#">Services</a></li>
             <li><a href="#">Contact</a></li>
             <li><a href="#">About</a></li>
+            <li><a href="covid.html">Covid-19</a></li>
             <li class="right"><a class="active" href="register.jsp">Register</a></li>
         </ul>
 
 
-        <!-- Inserting value into the database from register.jsp servlet.
+        
 
         <!-- Creating a table for user registration -->
 

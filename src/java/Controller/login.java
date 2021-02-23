@@ -1,4 +1,7 @@
 
+
+// Reference to the source I used to complete the 'Login' functionality in this form - https://www.youtube.com/watch?v=7u9XtWIXzOA (YouTube)
+
 package Controller;
 
 import java.io.IOException;
@@ -79,7 +82,7 @@ public class login extends HttpServlet {
                 
                 
                 if(username.equals(unameDB) && password.equals(passDb)){
-                    System.out.println("Inside IFF");
+                    System.out.println("Inside IF");
                     
                     HttpSession session=request.getSession();
                     
@@ -89,7 +92,7 @@ public class login extends HttpServlet {
                     rd.forward(request, response);
                     
                 }else{
-                    System.out.println("Inside ELSEE");
+                    System.out.println("Inside ELSE");
                     request.setAttribute("error", "INVALID CREDENTIALS");
                     RequestDispatcher rd = request.getRequestDispatcher("login.jsp");
                     rd.include(request, response);                    

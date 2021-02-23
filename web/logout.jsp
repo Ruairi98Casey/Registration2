@@ -4,6 +4,8 @@
     Author     : ruair
 --%>
 
+<!-- Reference to the source I used to complete the 'Log Out' functionality in this form - https://www.youtube.com/watch?v=7u9XtWIXzOA (YouTube) -->
+
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>

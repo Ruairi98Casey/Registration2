@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<!-- Reference to the source I used to complete the 'Covid-19 Tracker' in this form - https://www.youtube.com/watch?v=YgsVNIMgGZk (YouTube) -->
+<!-- Reference to the source I used to complete the 'Navigation Bar' in this form - https://www.w3schools.com/css/tryit.asp?filename=trycss_navbar_horizontal_responsive (w3schools) -->
+
+<html>
+    <head>
+        <title>A Helping Hand</title>
+        <link href="bootstrapNEW/css/bootstrap.css" rel="stylesheet" type="text/css"/>
+        <link href="bootstrapNEW/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <!-- add icon link -->
+        <link rel = "icon" href =  
+              "https://image.freepik.com/free-vector/handshake-icon-flat-style_169241-482.jpg" 
+              type = "image/x-icon"> 
+        <meta charset="UTF-8">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="text/javascript" src="app.js"></script>
+
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+            }
+
+            html {
+                height: 100%;
+                width: 100%;
+            }
+            h1, h2 {
+                font-family: 'Roboto', sans-serif;
+                font-weight: 300;
+                text-align: center;
+                padding-bottom: 20px;
+                font-size: 250%;
+            }
+
+            .title {
+                background: linear-gradient(to right, #feb47b, #ff7e5f);
+                padding: 20px;
+            }
+
+            .subtitle {
+                padding: 20px;
+                font-size: 180%;
+            }
+
+            div {
+                padding: 20px;
+            }
+
+            .stats-container {
+                text-align: center;
+                float: right;
+                display: inline-block;
+            }
+            .location-container {
+                display: inline-block;
+            }
+            .data-container {
+                border: 2px solid #feb47b;
+                margin-right: 30%;
+                margin-left: 30%;
+
+            }
+            h4 {
+                font-size: 85%;
+                color: gray;
+                font-family: 'Roboto', sans-serif;
+                font-weight: 300;
+                text-align: center;
+                padding-top: 20px;
+                padding-left: 20px;
+                padding-right: 20px;
+                padding-bottom: 5px;
+            }
+            .footer {
+                font-family: 'Roboto', sans-serif;
+                bottom: 0;
+                font-size: 75%;
+                padding: 5px;
+            }
+
+
+            body {margin: 0;}
+
+            ul.topnav {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                background-color: #333;
+            }
+
+            ul.topnav li {float: left;}
+
+            ul.topnav li a {
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+
+            ul.topnav li a:hover:not(.active) {background-color: #111;}
+
+            ul.topnav li a.active {background-color: #4CAF50;}
+
+            ul.topnav li.right {float: right;}
+
+            @media screen and (max-width: 600px) {
+                ul.topnav li.right, 
+                ul.topnav li {float: none;}
+            }
+        </style>
+
+    </head>
+    <body>
+        <ul class="topnav">
+            <li><a href="index.jsp">Home</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">About</a></li>
+            <li><a class="active" href="covid.html">Covid-19</a></li>
+            <li class="right"><a href="register.jsp">Register</a></li>
+            <li class="right"><a href="login.jsp">Login</a></li>
+            <li class="right"><a href="adminReport.jsp">Admin Records</a></li>
+        </ul>
+        <h2 class="subtitle">Covid-19 Daily Statistics</h2>
+        <div class="data-container">
+            <div class="stats-container">
+                <h4>Cases</h4>
+                <h1 id="cases"></h1>
+                <h4>Deaths</h4>
+                <h1 id="deaths"></h1>
+                <h4>% of Deaths</h4>
+                <h1 id="percent"></h1>
+            </div>
+            <div class="location-container">
+                <h4>Country</h4>
+                <h1 id="country">Ireland</h1>
+                <h4>Population</h4>
+                <h1 id="population"></h1>
+                <h4>Last Updated</h4>
+                <h1 id="update"></h1>
+            </div>
+        </div>
+        <h1 class="footer">For more information regarding Covid-19 guidelines, please visit <a href="https://www2.hse.ie/coronavirus/">Coronavirus - HSE.ie</a></h1>
+        <h1 class="footer">Data provided by <a href="https://systems.jhu.edu/research/public-health/ncov/">Johns Hopkins University</a></h1>
+    </body>
+</html>

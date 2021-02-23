@@ -1,4 +1,7 @@
 
+
+// Reference to the source I used to complete the 'Register' functionality in this form - https://www.youtube.com/watch?v=lBB_hZj_vXM (YouTube) 
+
 package Controller;
 
 import java.io.IOException;
@@ -63,6 +66,8 @@ public class register extends HttpServlet {
             System.out.println("Connected");
             
             //connected with the DB
+            
+            // Inserting value into the database from register.jsp servlet.
             
             String sql = "insert into users.general(fullname,username,email,password,usertype) values(?,?,?,?,?)";
             
