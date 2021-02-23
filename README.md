@@ -24,3 +24,5 @@ A list of additional sources used within the project:
 * [Youtube](https://www.youtube.com/watch?v=7u9XtWIXzOA): Login/Logout using JSP servlet, java, MySql & changing navigation bar after Login and Logout.
 * [W3Schools](https://www.w3schools.com/css/tryit.asp?filename=trycss_navbar_horizontal_responsive): Naviagtion bar
 * [Youtube](https://www.youtube.com/watch?v=-etRgxd9vc4): Displaying DB records using JSP and CRUD functionality. (Iteration 2)
+* [Youtube](https://www.youtube.com/watch?v=YgsVNIMgGZk): Covid-19 Tracker (covid.html & app.js) (Iteration 3)
+* [YouTube](https://www.youtube.com/watch?v=4XNzeodniZg): Search records using Jsp Servlet & MySQL (index.html & serveltt.java)(Iteration 3)
