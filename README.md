@@ -26,3 +26,4 @@ A list of additional sources used within the project:
 * [Youtube](https://www.youtube.com/watch?v=-etRgxd9vc4): Displaying DB records using JSP and CRUD functionality. (Iteration 2)
 * [Youtube](https://www.youtube.com/watch?v=YgsVNIMgGZk): Covid-19 Tracker (covid.html & app.js) (Iteration 3)
 * [YouTube](https://www.youtube.com/watch?v=4XNzeodniZg): Search records using Jsp Servlet & MySQL (index.html & serveltt.java)(Iteration 3)
+* [YouTube](https://www.youtube.com/watch?v=eeHqZeJ9Vqc): Design of Login & Registration form (login.jsp, register.jsp, adminLogin.jsp & loginStyle.css)(Iteration 6)
