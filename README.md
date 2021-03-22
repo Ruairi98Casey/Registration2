@@ -14,6 +14,7 @@ A list of technologies used within the project:
 * MySQL Workbench 8.0
 * GlassFish Server 4.1
 * Bootstrap v5.0.0-beta1 (Iteration 2)
+* EmailJS (Final Demo)
 ***
 ### Aditional Sources 
 ***
@@ -27,3 +28,4 @@ A list of additional sources used within the project:
 * [Youtube](https://www.youtube.com/watch?v=YgsVNIMgGZk): Covid-19 Tracker (covid.html & app.js) (Iteration 3)
 * [YouTube](https://www.youtube.com/watch?v=4XNzeodniZg): Search records using Jsp Servlet & MySQL (index.html & serveltt.java)(Iteration 3)
 * [YouTube](https://www.youtube.com/watch?v=eeHqZeJ9Vqc): Design of Login & Registration form (login.jsp, register.jsp, adminLogin.jsp & loginStyle.css)(Iteration 6)
+* [YouTube](https://www.youtube.com/watch?v=x7Ewtay0Q78): Email functionality (referClient.jsp, app.js)(Final Demo)
