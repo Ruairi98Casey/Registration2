@@ -1,5 +1,6 @@
 # A Helping Hand 
 ***
+I declare that this is my own work, except where duly acknowledged.
 ### Introduction
 ***
 For my final year project, I am going to be developing a web application that called 'A Helping Hand'. The main aim of my application is to alleviate the level of loneliness and social isolation on elderly adults in Ireland. I plan on achieving this by creating a platform that will integrate a 'buddy system', that will allow poeple to connect with one-another and form new friendships. By doing this, I hope it will allow the eldery to reconnect to society once again and offer them a new sense of living. 
